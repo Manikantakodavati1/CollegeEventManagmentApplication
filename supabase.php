@@ -1,7 +1,11 @@
 <?php
+require __DIR__ . '/vendor/autoload.php';
 
-$SUPABASE_URL = 'https://xkkjvcfnbegtydztcguf.supabase.co';
-$SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhra2p2Y2ZuYmVndHlkenRjZ3VmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUxNTI2MjAsImV4cCI6MjA2MDcyODYyMH0.2hsSG_RRUv9e0z8bbcfdSd3lj0Wz_hZtJZXT3ZTns5g';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$SUPABASE_URL = getenv('SUPABASE_URL');
+$SUPABASE_KEY = getenv('SUPABASE_KEY');
 
 // Ensure credentials are present
 if (!$SUPABASE_URL || !$SUPABASE_KEY) {
