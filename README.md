@@ -18,7 +18,8 @@ Key Features of the System:
 The College Event Management System ensures a smooth, transparent, and digitally driven approach to handling events, contributing to better student engagement, time management, and organizational success.
 
 objectives
-Main Objective: Develop a centralized web application for managing college events.
+Main Objective:
+Develop a centralized web application for managing college events.
 Sub-objectives:
 •	Allow students to register and view event details
 •	Enable faculty to manage events and approve requests
